@@ -24,8 +24,8 @@ export const Report = function({  }){
                         <textarea 
                             style={{height: '14rem', outline: 'none'}} 
                             className='w-100' 
-                            onChange={(e) => setText(e.target.value)}
                             value={text}
+                            onChange={(e) => setText(e.target.value)}
                         />
                         <div className='row mt-3'>
                             <div className='col-md-6'>

@@ -1,5 +1,6 @@
 import { Link, useLocation } from 'react-router-dom'
 import clsx from 'clsx'
+import logo from '../assets/alfaro_tech_logo.png'
 
 
 const navigation = [
@@ -23,7 +24,9 @@ export const Navbar = function({ }){
     return (
         <nav className='navbar navbar-expand-lg bg-dark' data-bs-theme='dark'>
             <div className='container'>
-                <Link className='navbar-brand' to='/'>Navbar</Link>
+                <Link className='navbar-brand' to='/'>
+                    <img style={{width: '5.5rem'}} src={logo} alt="Logo" />
+                </Link>
                 <button className='navbar-toggler' type='button' data-bs-toggle='collapse' data-bs-target='#navbarColor02' aria-controls='navbarColor02' aria-expanded='false' aria-label='Toggle navigation'>
                     <span className='navbar-toggler-icon'></span>
                 </button>
